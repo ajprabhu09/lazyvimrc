@@ -40,7 +40,7 @@ PROMPT+=" $NEWLINE%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ ) %{$reset_co
 
 # Copying to system clipboard
 
-## DEPRICATED USE `"+y` instead
+## DEPRECATED USE `"+y` instead
 - looking at `lua/config/options.lua` `vim.o.clipboard="unamedplus"` yanks directly to clipboard
 - disable this if this is not wanted
 
