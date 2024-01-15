@@ -23,6 +23,25 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
     - better syntax highlighting 
     - `https://github.com/numirias/Semshi`
 
+# Shell
+
+[X] Oh-My-Zsh `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+[X] Terminal Colors 
+```
+NEWLINE=$'\n'
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+DIVIDER=$'------------$NEWLINE'
+PROMPT="%{$fg_bold[white]%}%n %{$fg[blue]%}@ %{$fg_bold[yellow]%}%m"
+PROMPT+=' %{$fg[cyan]%}%d'
+PROMPT+=' $(git_prompt_info)'
+PROMPT+=" $NEWLINE%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ ) %{$reset_color%}"
+```
+
+
+# Copying to system clipboard
+
+- looking at `lua/config/options.lua` `vim.o.clipboard="unamedplus"` yanks directly to clipboard
+- disable this if this is not wanted
 
 
 # TODO
